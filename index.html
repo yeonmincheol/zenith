@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>제니스 보험 DATA</title>
+
+  <!-- 🔹 랜딩 전용 CSS (/landing/css/...) -->
+  <link rel="stylesheet" href="/landing/css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- 🔹 파비콘도 /landing/img/... -->
+  <link rel="shortcut icon" href="/landing/img/favicon.png" type="image/png" />
+  <link rel="icon" href="/landing/img/favicon.png" type="image/png" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- 상단 헤더 / 히어로 -->
+    <header class="hero">
+      <img
+        src="/landing/img/hero-insurance-db.png"
+        alt="제니스 보험 DATA 메인 이미지"
+        class="hero-img"
+      />
+    </header>
+
+    <main>
+      <!-- 상품 제목 -->
+      <section class="section section-center">
+        <h2>전국 DB 일반 · 실버 · 외국인 공급 가능</h2>
+      </section>
+
+      <!-- 상품 카드 3개 -->
+      <section class="section products">
+
+        <!-- 전국 일반 DB -->
+        <article class="card">
+          <div class="card-icon">
+            <img src="/landing/img/icon-general-db.png" alt="전국 일반 DB 아이콘" />
+          </div>
+          <h3>전국 일반 DB</h3>
+          <p class="price">
+            <strong>65,000원</strong><span> (VAT 별도)</span>
+          </p>
+          <a href="/landing/audio/general-sample.m4a" class="btn btn-primary" target="_blank">
+            샘플 콜 듣기
+          </a>
+        </article>
+
+        <!-- 전국 실버 DB -->
+        <article class="card">
+          <div class="card-icon">
+            <img src="/landing/img/icon-silver-db.png" alt="전국 실버 DB 아이콘" />
+          </div>
+          <h3>전국 실버 DB</h3>
+          <p class="price">
+            <strong>45,000원</strong><span> (VAT 별도)</span>
+          </p>
+          <a href="/landing/audio/silver-sample.m4a" class="btn btn-primary" target="_blank">
+            샘플 콜 듣기
+          </a>
+        </article>
+
+        <!-- 외국인 DB -->
+        <article class="card">
+          <div class="card-icon">
+            <img src="/landing/img/icon-foreigner-db.png" alt="외국인 DB 아이콘" />
+          </div>
+          <h3>외국인 DB</h3>
+          <p class="price">
+            <strong>35,000원</strong><span> (VAT 별도)</span>
+          </p>
+          <a href="/landing/audio/foreigner-sample.m4a" class="btn btn-primary" target="_blank">
+            샘플 콜 듣기
+          </a>
+        </article>
+
+      </section>
+
+      <!-- DB 품질/A/S 기준 -->
+      <section class="section as-section">
+        <div class="as-icon">
+          <img src="/landing/img/icon-as-service.png" alt="DB A/S 아이콘" />
+        </div>
+
+        <div class="as-content">
+          <h2>A/S 기준 안내</h2>
+          <p class="as-summary">
+            교환 불가 기준 및 A/S 요청 조건을 꼭 확인해주세요.
+          </p>
+
+          <!-- ✅ 버튼 영역 -->
+          <div class="as-actions">
+            <!-- 모달로 기준 보기 -->
+              <button
+                type="button"
+                class="btn btn-outline doc-link-btn"
+                data-type="image"
+                data-img="/landing/img/as-guideline.png"
+                data-alt="DB A/S 기준 안내 이미지"
+              >
+                A/S 기준 보기
+              </button>
+
+            <!-- 🔽 새로 추가: A/S 양식 다운로드 -->
+            <a href="/landing/docs/DB_AS_요청양식.docx" class="btn btn-outline as-download-btn" download>
+              A/S 양식 다운로드
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 샘플 스크립트 안내 박스 -->
+      <section class="section as-section">
+        <div class="as-icon">
+          <img src="/landing/img/icon-script-agent.png" id="script-agent-icon" alt="스크립트 안내 아이콘" />
+        </div>
+
+        <div class="as-content">
+          <h2>샘플 스크립트 안내</h2>
+          <p class="as-summary">
+            상담에 활용할 수 있는 샘플 콜 스크립트를 확인해 주세요.
+          </p>
+
+          <button
+            type="button"
+            class="btn btn-outline doc-link-btn"
+            data-doc="/landing/docs/script-guide.html"
+          >
+            샘플 스크립트 보기
+          </button>
+        </div>
+      </section>
+
+      <!-- 상담 CTA -->
+      <section class="section cta-section">
+        <h2>지금 편하게 상담 받아보세요</h2>
+        <p class="cta-info">
+          카카오톡 ID : <strong>tu7878</strong><br />
+          전화 상담 : <strong>010-7764-1002</strong>
+        </p>
+        <div class="cta-buttons">
+          <a href="https://open.kakao.com/o/sa5Znsai" class="btn btn-kakao" target="_blank">
+            카카오톡 상담하기
+          </a>
+          <a href="tel:010-2365-6523" class="btn btn-call">전화 바로 걸기</a>
+        </div>
+        <p class="cta-sub">국내 NO.1 보험 DB 생산 팩토리</p>
+      </section>
+
+      <!-- 약관 / 개인정보 footer -->
+      <footer class="footer">
+        <p class="footer-links">
+          <button
+            type="button"
+            class="footer-link-btn"
+            data-doc="/landing/docs/terms.html"
+          >
+            이용약관
+          </button>
+          <span class="divider">|</span>
+          <button
+            type="button"
+            class="footer-link-btn"
+            data-doc="/landing/docs/privacy.html"
+          >
+            개인정보처리방침
+          </button>
+        </p>
+      </footer>
+
+      <!-- 모달 -->
+      <div id="docModal" class="modal">
+        <div class="modal-dialog">
+          <button class="modal-close" type="button">✕</button>
+          <div class="modal-body">
+            <!-- 여기 안에 /landing/docs/*.html 내용이 동적으로 들어감 -->
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- 분리된 JS 파일 -->
+  <script src="/landing/js/main.js"></script>
+</body>
+</html>

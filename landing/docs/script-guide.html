@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제니즈 보험 DATA - 상담 스크립트</title>
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; line-height: 1.5; color: #333; margin: 0; padding: 20px; background-color: #fff; }
+        .script-container { max-width: 800px; margin: 0 auto; border: 1px solid #ddd; }
+        .header { display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; border-bottom: 2px solid #333; font-weight: bold; font-size: 1.2rem; }
+        .row { display: flex; border-bottom: 1px solid #eee; }
+        .label { width: 80px; background-color: #fdf6e7; padding: 20px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; border-right: 1px solid #ddd; flex-shrink: 0; }
+        .content { padding: 20px; font-size: 0.95rem; white-space: pre-wrap; }
+        .highlight-red { color: #e74c3c; font-weight: bold; }
+        .highlight-blue { background-color: #e8f4fd; }
+        .close-btn { cursor: pointer; font-size: 1.5rem; border: none; background: none; }
+    </style>
+</head>
+<body>
+
+<div class="script-container">
+    <div class="header">
+        <span>스크립트</span>
+        <button class="close-btn" onclick="window.close()">×</button>
+    </div>
+
+    <div class="row">
+        <div class="label">1차 영업</div>
+        <div class="content">안녕하세요 OOO 고객님, 종합 보험 조정센터 본부 팀장 OOO 입니다. 통화 가능하신가요?
+작년부터 보험료 차등제가 시행되면서 보험료를 성실히 납부하시고 청구가 많지 않으신 고객님들 대상으로 보험점검서비스 안내차 전화드렸어요.
+
+현재 가입 돼있는 보험 중에 불필요한 보험이 있는건 아닌지, 같은 유형의 중복 가입은 없는지 전문가님이 지원 나가서 안내 도와드릴 예정이에요.
+
+고객님 거주하시는 지역이 OO 맞으실까요? or 고객님 계시는 지역이 어디시죠?? <span class="highlight-red">(동·읍·면 확인) (근처에 역이나 큰 건물 같은 기준점이 있을까요??)</span>
+
+매달 납부하시는 금액은 대략적으로 <span class="highlight-red">20만원대 / 30만원대</span> 납부하고 계세요? <span class="highlight-red">(10만원 미만 불가)</span>
+<span class="highlight-red">OO년생 맞으시고 내국인 대상 혜택이다 보니 외국 국적은 아니시죠?(F4, F5 가능) 확인 감사합니다. 원활한 상담을 위해 암·뇌·심장 등 장애진단 받은 이력이 있으실까요? 그 외 다른 진단은 없으시죠?</span>
+
+전문가님이 고객님 계신 곳 근처로 방문해 현재 가입 되어 있는 보험을 상세히 체크 해드리는 무료 방문 서비스이니 안심하시구요, 전화상으로 접수해 드려야 해서 정리 후 빠르게 접수해 드리겠습니다.
+(궁금한 사항들은 접수 끝나고 질문주시면 답변드릴게요)
+전화 끊지 마시고, 잠시만요 <span class="highlight-red">(목소리 속도 주의, 말끊음 주의!!)</span></div>
+    </div>
+
+    <div class="row highlight-blue">
+        <div class="label">녹취</div>
+        <div class="content">반갑습니다, 보험 조정 본부 담당자 OOO 입니다, OOO 고객님 맞으시죠?
+
+고객님께서 받아보신 내용에 대해서 잠시 안내 드릴게요, 이미 납부하시는 보험료가 비싼건 아닌지 중복 특약으로 혜택을 못 받는 건 아닌지 고객님이랑 같은 지역의 전문가님이 무료로 방문 점검해서 정확히 안내드리며 보험료 조정해 드릴거예요.
+
+접수 내용 확인하겠습니다. 계시는 지역이 OO시 OO구 OO동, 연락처는 010-0000-0000 맞으시죠?
+
+전문가님이 방문 전 연락 먼저 드릴텐데 통화는 <span class="highlight-red">오전·오후</span> 언제 편하실까요?
+(통화시간 애매할 경우 부재시 문자 확인하시면 전화수신 수 있으시죠?)
+
+네, 방문은 <span class="highlight-red">평일·주말</span> 모두 가능한데 언제 편하실까요? 시간은 <span class="highlight-red">오전·오후</span> 중 언제 좋으실까요?
+(일정 애매할 경우 2~3일 내로 연락드릴건데 일주일 이내로 일정은 조율 가능하신거죠?)
+
+현재 매월 내는 총 보험료가 대략 00원대 이상이라고 하셨는데 맞으시죠? 확인 감사합니다.
+<span class="highlight-red">(20만원 이내 : 부족한 보장에 대해 맞춤 상담을 진행 도와드리는 데 괜찮으시죠? (대답))</span>
+
+<span class="highlight-red">OOO 고객님 본인확인 차 주민등록상 생년월일 확인 부탁드릴게요, 암·뇌·심장 등 장애진단 이력은 없는게 맞으시죠? 그 외 다른 진단 없으시죠?</span>
+
+네, 보험점검을 위해 방문 상담 나가는 건 괜찮으시죠? (대답)
+지금까지 말씀주신 내용은 방문하실 전문가님 한테만 전달드릴게요.
+
+불필요한 보험료 줄이셨다고 많은 분들의 만족도가 굉장히 높구요, 가지고 계신 보험을 만기까지 잘 유지하시는게 중요하잖아요. 중복, 특약 찾아드리는 무료 점검 서비스니까 이번에 꼭 점검 잘 받아보세요.
+
+감사합니다, 좋은 하루 되세요^^</div>
+    </div>
+</div>
+
+</body>
+</html>

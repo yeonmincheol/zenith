@@ -1,0 +1,55 @@
+/* 기본 설정 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* 히어로 섹션 (이미지 영역) */
+.hero {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+.hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 상품 카드 디자인 */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-10px); }
+
+/* 버튼 디자인 */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.btn-primary { background-color: #007bff; color: white; }
+.btn-kakao { background-color: #fee500; color: #3c1e1e; }
+.btn-call { background-color: #28a745; color: white; }
+
+/* 섹션 제목 */
+.section-center { text-align: center; margin-top: 40px; }
+h2 { color: #222; font-size: 1.5rem; }
