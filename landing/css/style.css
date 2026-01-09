@@ -1,55 +1,59 @@
 /* 기본 설정 */
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     background-color: #f8f9fa;
-    color: #333;
+    display: flex; flex-direction: column; align-items: center; /* 전체 중앙 정렬 */
 }
 
-/* 히어로 섹션 (이미지 영역) */
-.hero {
-    width: 100%;
+/* 박스들을 감싸는 컨테이너 */
+.container {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
-    background-color: #fff;
-}
-.hero-img {
-    max-width: 100%;
-    height: auto;
 }
 
-/* 상품 카드 디자인 */
+/* 상단 메인 이미지 */
+.hero { width: 100%; margin-bottom: 40px; }
+.hero-img { width: 100%; max-height: 400px; object-fit: cover; }
+
+/* 상품 카드들을 가로로 나열 */
 .products {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* 가로 중앙 */
     gap: 20px;
-    padding: 40px 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* 화면 좁아지면 아래로 내려감 */
+    padding: 20px 0;
 }
+
+/* 개별 카드(박스) 디자인 */
 .card {
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 30px;
     width: 280px;
-    text-align: center;
-    transition: transform 0.3s;
+    transition: 0.3s;
 }
 .card:hover { transform: translateY(-10px); }
 
-/* 버튼 디자인 */
+/* 하단 정보 섹션 */
+.info-section {
+    background: white;
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+}
+
+/* 버튼 스타일 */
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    border-radius: 8px;
+    background: #007bff;
+    color: white;
     text-decoration: none;
+    border-radius: 8px;
     font-weight: bold;
-    margin-top: 15px;
 }
-.btn-primary { background-color: #007bff; color: white; }
-.btn-kakao { background-color: #fee500; color: #3c1e1e; }
-.btn-call { background-color: #28a745; color: white; }
-
-/* 섹션 제목 */
-.section-center { text-align: center; margin-top: 40px; }
-h2 { color: #222; font-size: 1.5rem; }
