@@ -44,47 +44,58 @@ body {
 .card h3 { color: #2D8E86; font-size: 1.1rem; margin: 15px 0 5px; }
 .card .price { font-weight: bold; color: #333; margin-bottom: 15px; }
 
-/* 하단 정보 섹션 전체 컨테이너 */
+/* 안내 섹션 전체 정렬 */
 .info-section {
-    width: 100%;
-    max-width: 800px; /* 이미지처럼 적절한 너비 설정 */
-    margin: 20px auto;
-    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 박스들을 중앙으로 */
+    gap: 20px;
+    padding: 20px;
 }
 
-/* 이미지와 똑같은 흰색 안내 박스 */
+/* 원하셨던 하얀색 둥근 박스 설정 */
 .info-box {
-    background-color: #ffffff;
-    border-radius: 30px; /* 매우 둥근 모서리 */
-    padding: 30px 40px;
-    margin-bottom: 20px;
-    display: flex; /* 가로 배치 */
-    align-items: center; /* 세로 중앙 정렬 */
-    gap: 25px; /* 아이콘과 텍스트 사이 간격 */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* 부드러운 그림자 */
-    text-align: left;
+    background-color: #ffffff; /* 박스 배경은 하얀색 */
+    border-radius: 25px;       /* 모서리를 아주 둥글게 */
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;             /* 내부 가로 배치 */
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* 은은한 그림자 효과 */
 }
 
-/* 아이콘 크기 고정 */
-.info-box img {
-    flex-shrink: 0;
-}
-
-/* 텍스트 영역 */
+/* 박스 내부 텍스트 정렬 */
 .info-text {
+    text-align: left;
     flex-grow: 1;
 }
 
 .info-text h2 {
-    font-size: 1.3rem;
-    color: #006674; /* 이미지 특유의 청록색 계열 */
-    margin: 0 0 8px 0;
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    color: #006674; /* 청록색 톤의 제목 색상 */
 }
 
-.info-text p {
-    font-size: 0.95rem;
-    color: #666;
-    margin: 0;
+/* 버튼 스타일 */
+.btn-outline {
+    border: 1.5px solid #0097a7;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: #0097a7;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.btn-filled {
+    background-color: #0097a7;
+    border: 1.5px solid #0097a7;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
 
 /* 버튼 그룹 및 스타일 */
@@ -114,3 +125,4 @@ body {
     font-weight: bold;
     font-size: 0.9rem;
 }
+
