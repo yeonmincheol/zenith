@@ -44,56 +44,73 @@ body {
 .card h3 { color: #2D8E86; font-size: 1.1rem; margin: 15px 0 5px; }
 .card .price { font-weight: bold; color: #333; margin-bottom: 15px; }
 
-/* 4. 하단 정보 섹션 (가로로 긴 박스) */
+/* 하단 정보 섹션 전체 컨테이너 */
 .info-section {
-    width: 90%;
-    max-width: 800px;
-    margin-top: 20px;
+    width: 100%;
+    max-width: 800px; /* 이미지처럼 적절한 너비 설정 */
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
+/* 이미지와 똑같은 흰색 안내 박스 */
 .info-box {
-    background: #FFFFFF;
-    border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 30px; /* 매우 둥근 모서리 */
+    padding: 30px 40px;
+    margin-bottom: 20px;
+    display: flex; /* 가로 배치 */
+    align-items: center; /* 세로 중앙 정렬 */
+    gap: 25px; /* 아이콘과 텍스트 사이 간격 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* 부드러운 그림자 */
+    text-align: left;
+}
+
+/* 아이콘 크기 고정 */
+.info-box img {
+    flex-shrink: 0;
+}
+
+/* 텍스트 영역 */
+.info-text {
+    flex-grow: 1;
+}
+
+.info-text h2 {
+    font-size: 1.3rem;
+    color: #006674; /* 이미지 특유의 청록색 계열 */
+    margin: 0 0 8px 0;
+}
+
+.info-text p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+}
+
+/* 버튼 그룹 및 스타일 */
+.btn-group {
     display: flex;
-    align-items: center;
-    gap: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    gap: 10px;
 }
 
-.info-text { text-align: left; flex-grow: 1; }
-.info-text h2 { font-size: 1rem; margin: 0; color: #2D8E86; }
-.info-text p { font-size: 0.85rem; color: #777; margin: 5px 0 0; }
-
-/* 5. 버튼 스타일 */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 25px;
+.btn-outline {
+    padding: 8px 18px;
+    border: 1.5px solid #0097a7;
+    border-radius: 20px;
+    color: #007c89;
     text-decoration: none;
+    font-weight: bold;
     font-size: 0.9rem;
-    font-weight: bold;
-    transition: 0.3s;
 }
 
-.btn-primary { background-color: #84D9C4; color: white; width: 80%; } /* 민트색 버튼 */
-.btn-outline { border: 1.5px solid #84D9C4; color: #2D8E86; padding: 5px 15px; }
-
-/* 6. 푸터 및 하단 연락처 */
-.contact-footer {
-    text-align: center;
-    padding: 40px 0;
-}
-
-.btn-contact {
-    display: inline-block;
-    padding: 12px 25px;
-    border-radius: 30px;
-    margin: 5px;
-    color: white;
-    font-weight: bold;
+/* 이미지 속 진한 민트색 버튼 */
+.btn-filled {
+    padding: 8px 18px;
+    background-color: #0097a7;
+    border: 1.5px solid #0097a7;
+    border-radius: 20px;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
-.btn-kakao { background-color: #FF8BA7; } /* 분홍색 상담 버튼 */
-.btn-phone { background-color: #FFA366; } /* 오렌지색 전화 버튼 */
