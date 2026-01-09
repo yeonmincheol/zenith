@@ -1,59 +1,99 @@
-/* 기본 설정 */
+/* 1. 기본 스타일 및 배경 설정 */
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    margin: 0; padding: 0;
-    background-color: #f8f9fa;
-    display: flex; flex-direction: column; align-items: center; /* 전체 중앙 정렬 */
+    margin: 0;
+    padding: 0;
+    background-color: #FFF9E9; /* 이미지와 같은 부드러운 노란빛 배경 */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* 박스들을 감싸는 컨테이너 */
-.container {
-    max-width: 1100px;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
+/* 2. 메인 헤더 및 히어로 이미지 */
+.hero {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* 상단 메인 이미지 */
-.hero { width: 100%; margin-bottom: 40px; }
-.hero-img { width: 100%; max-height: 400px; object-fit: cover; }
-
-/* 상품 카드들을 가로로 나열 */
+/* 3. 상품 카드 섹션 (가로 정렬) */
 .products {
     display: flex;
-    justify-content: center; /* 가로 중앙 */
-    gap: 20px;
-    flex-wrap: wrap; /* 화면 좁아지면 아래로 내려감 */
-    padding: 20px 0;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* 모바일 대응 */
+    max-width: 1000px;
+    padding: 20px;
 }
 
-/* 개별 카드(박스) 디자인 */
 .card {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    padding: 30px;
-    width: 280px;
-    transition: 0.3s;
+    background: #FFFFFF;
+    border-radius: 20px; /* 둥근 모서리 디자인 */
+    padding: 25px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03); /* 은은한 그림자 */
 }
-.card:hover { transform: translateY(-10px); }
 
-/* 하단 정보 섹션 */
+.card h3 { color: #2D8E86; font-size: 1.1rem; margin: 15px 0 5px; }
+.card .price { font-weight: bold; color: #333; margin-bottom: 15px; }
+
+/* 4. 하단 정보 섹션 (가로로 긴 박스) */
 .info-section {
-    background: white;
-    width: 100%;
-    padding: 50px 0;
-    margin-top: 50px;
-    border-top: 1px solid #eee;
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px;
 }
 
-/* 버튼 스타일 */
+.info-box {
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.info-text { text-align: left; flex-grow: 1; }
+.info-text h2 { font-size: 1rem; margin: 0; color: #2D8E86; }
+.info-text p { font-size: 0.85rem; color: #777; margin: 5px 0 0; }
+
+/* 5. 버튼 스타일 */
 .btn {
     display: inline-block;
-    padding: 12px 24px;
-    background: #007bff;
-    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
     text-decoration: none;
-    border-radius: 8px;
+    font-size: 0.9rem;
     font-weight: bold;
+    transition: 0.3s;
 }
+
+.btn-primary { background-color: #84D9C4; color: white; width: 80%; } /* 민트색 버튼 */
+.btn-outline { border: 1.5px solid #84D9C4; color: #2D8E86; padding: 5px 15px; }
+
+/* 6. 푸터 및 하단 연락처 */
+.contact-footer {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.btn-contact {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn-kakao { background-color: #FF8BA7; } /* 분홍색 상담 버튼 */
+.btn-phone { background-color: #FFA366; } /* 오렌지색 전화 버튼 */
