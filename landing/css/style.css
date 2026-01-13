@@ -61,15 +61,16 @@ body {
 
 /* 원하셨던 하얀색 둥근 박스 설정 */
 .info-box {
-    background-color: #ffffff; /* 박스 배경은 하얀색 */
-    border-radius: 25px;       /* 모서리를 아주 둥글게 */
-    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 35px;       /* 이미지처럼 더 둥글게 수정 */
+    padding: 25px 40px;        /* 안쪽 여백을 넓혀서 여유있게 */
     width: 100%;
-    max-width: 800px;
-    display: flex;             /* 내부 가로 배치 */
+    max-width: 900px;          /* 가로 길이를 조금 더 늘림 */
+    display: flex;
     align-items: center;
-    gap: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* 은은한 그림자 효과 */
+    gap: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* 더 깊고 부드러운 그림자 */
+    margin-bottom: 20px;
 }
 
 /* 박스 내부 텍스트 정렬 */
@@ -140,3 +141,4 @@ body {
     background-color: #69bfa9;
     transform: translateY(-2px);
 }
+
