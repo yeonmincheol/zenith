@@ -107,8 +107,8 @@
                 data-img="landing/img/as-guideline.png"
                 data-alt="DB A/S 기준 안내 이미지"
               >
-<a href="landing/img/as-guideline.png" class="btn-outline" onclick="openModal()">
-                A/S 기준 보기
+<a href="javascript:void(0)" class="btn-outline" onclick="openModal()">
+                A/S 기준 보기 </a>
               </button>
 
             <!-- 🔽 새로 추가: A/S 양식 다운로드 -->
@@ -136,8 +136,8 @@
             class="btn btn-outline doc-link-btn"
             data-doc="landing/docs/script-guide.html"
           >
-<a href="landing/docs/script-guide.html" class="btn-outline">
-            샘플 스크립트 보기
+<a href="javascript:void(0)" class="btn-outline" onclick="openModal()">
+  샘플 스크립트 보기 </a>
           </button>
         </div>
       </section>
@@ -197,18 +197,16 @@
 <div id="asModal" class="modal">
     <div class="modal-content">
         <span class="close-btn" onclick="closeModal()">&times;</span>
-        <h2>DB 품질 및 A/S 기준</h2>
-        <hr>
+        <h2>A/S 가이드 라인</h2>
         <div class="modal-body">
-            <p>1. 접수 시간: DB 수령 후 24시간 이내</p>
-            <p>2. 교환 가능 사유: 결번, 중복, 본인 아님 등</p>
-            <p>3. 교환 불가: 단순 변심, 3회 이상 통화 연결 시도 등</p>
+            <img src="landing/img/as-guideline.png" style="width:100%;">
         </div>
-        <button class="btn-filled" onclick="closeModal()">닫기</button>
+        <button class="btn-primary" onclick="closeModal()">닫기</button>
     </div>
 </div>
 </body>
 </html>
+
 
 
 
