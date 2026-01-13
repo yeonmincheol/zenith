@@ -87,12 +87,15 @@ body {
 
 /* 버튼 스타일 */
 .btn-outline {
-    border: 1.5px solid #0097a7;
-    border-radius: 20px;
-    padding: 8px 15px;
-    color: #0097a7;
-    text-decoration: none;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1.5px solid #84D9C4; /* 이미지 특유의 민트색 테두리 */
+    border-radius: 25px;       /* 버튼도 타원형으로 */
+    color: #2D8E86 !important; /* 진한 민트색 글자 */
+    text-decoration: none !important; /* 밑줄 절대 방지 */
     font-size: 0.9rem;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .btn-filled {
@@ -112,13 +115,15 @@ body {
 }
 
 .btn-outline {
-    padding: 8px 18px;
-    border: 1.5px solid #0097a7;
-    border-radius: 20px;
-    color: #007c89;
-    text-decoration: none;
-    font-weight: bold;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1.5px solid #84D9C4; /* 이미지 특유의 민트색 테두리 */
+    border-radius: 25px;       /* 버튼도 타원형으로 */
+    color: #2D8E86 !important; /* 진한 민트색 글자 */
+    text-decoration: none !important; /* 밑줄 절대 방지 */
     font-size: 0.9rem;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 /* 타원형 버튼 기본 스타일 */
@@ -141,4 +146,5 @@ body {
     background-color: #69bfa9;
     transform: translateY(-2px);
 }
+
 
