@@ -182,8 +182,50 @@ body {
     transform: translateY(-2px);
 }
 
+.cta-section {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 4px !important;
+}
 
+.section {
+    margin: 28px 0;
+}
 
+* {
+    box-sizing: border-box;
+}
+.footer {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+footer {
+    display: block;
+    unicode-bidi: isolate;
+}
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 9999;
+    padding: 16px;
+}
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 16px 80px;
+}
 
 
 
