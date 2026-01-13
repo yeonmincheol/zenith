@@ -194,8 +194,22 @@
 
   <!-- 분리된 JS 파일 -->
   <script src="landing/js/main.js"></script>
+<div id="asModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>DB 품질 및 A/S 기준</h2>
+        <hr>
+        <div class="modal-body">
+            <p>1. 접수 시간: DB 수령 후 24시간 이내</p>
+            <p>2. 교환 가능 사유: 결번, 중복, 본인 아님 등</p>
+            <p>3. 교환 불가: 단순 변심, 3회 이상 통화 연결 시도 등</p>
+        </div>
+        <button class="btn-filled" onclick="closeModal()">닫기</button>
+    </div>
+</div>
 </body>
 </html>
+
 
 
 
