@@ -70,6 +70,16 @@ body {
     box-sizing: border-box;
 }
 
+.as-section {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 16px;
+    background: #fffef6;
+    border-radius: 24px;
+    padding: 18px 20px 24px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
 /* 박스 내부 텍스트 정렬 */
 .info-text {
     text-align: left;
@@ -143,6 +153,7 @@ body {
     background-color: #69bfa9;
     transform: translateY(-2px);
 }
+
 
 
 
