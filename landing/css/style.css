@@ -54,23 +54,24 @@ body {
 .info-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* 박스들을 중앙으로 */
+    align-items: center; 
     gap: 20px;
     padding: 20px;
+    width: 100%;
 }
 
 /* 원하셨던 하얀색 둥근 박스 설정 */
 .info-box {
-    background-color: #ffffff;
-    border-radius: 35px;       /* 이미지처럼 더 둥글게 수정 */
-    padding: 25px 40px;        /* 안쪽 여백을 넓혀서 여유있게 */
+    background-color: #ffffff; /* 박스 배경 흰색 */
+    border-radius: 35px;       /* 이미지와 같은 아주 둥근 모서리 */
+    padding: 30px 45px;        /* 넉넉한 안쪽 여백 */
     width: 100%;
-    max-width: 900px;          /* 가로 길이를 조금 더 늘림 */
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* 더 깊고 부드러운 그림자 */
-    margin-bottom: 20px;
+    max-width: 820px;          /* 상단 상품 카드들과 가로폭 통일 */
+    display: flex;             /* 내부 요소를 가로로 배치 */
+    align-items: center;       /* 세로 기준 중앙 정렬 */
+    gap: 25px;                 /* 아이콘과 글자 사이 간격 */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03); /* 아주 부드러운 그림자 */
+    box-sizing: border-box;
 }
 
 /* 박스 내부 텍스트 정렬 */
@@ -146,5 +147,6 @@ body {
     background-color: #69bfa9;
     transform: translateY(-2px);
 }
+
 
 
