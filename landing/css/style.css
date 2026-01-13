@@ -10,26 +10,32 @@ body {
     align-items: center;
 }
 
-/* 2. 메인 헤더 및 히어로 이미지 */
+/* 1. 메인 이미지를 감싸는 구역 설정 */
 .hero {
     width: 100%;
-    max-width: 800px;
-    margin-bottom: 20px;
-}
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
+    max-width: 1000px; /* 아래 상품 카드 섹션과 동일한 너비로 설정 */
+    margin: 0 auto 20px auto; /* 중앙 정렬 및 아래 간격 */
+    padding: 0 20px; /* 양옆 여백 */
+    box-sizing: border-box;
 }
 
-/* 3. 상품 카드 섹션 (가로 정렬) */
+.hero img {
+    width: 100%; /* 부모 너비(1000px)에 꽉 차게 설정 */
+    height: auto;
+    border-radius: 20px; /* 이미지 모서리도 박스처럼 부드럽게 */
+}
+
+/* 2. 상품 카드 섹션 설정 */
 .products {
     display: flex;
     justify-content: center;
     gap: 15px;
-    flex-wrap: wrap; /* 모바일 대응 */
-    max-width: 1000px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px; /* 위 히어로 이미지와 너비를 똑같이 맞춤 */
+    margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .card {
@@ -125,4 +131,5 @@ body {
     font-weight: bold;
     font-size: 0.9rem;
 }
+
 
