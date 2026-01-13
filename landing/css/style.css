@@ -80,6 +80,13 @@ body {
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
 }
 
+.as-icon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 20px 18px;
+}
+
 /* 박스 내부 텍스트 정렬 */
 .info-text {
     text-align: left;
@@ -153,6 +160,7 @@ body {
     background-color: #69bfa9;
     transform: translateY(-2px);
 }
+
 
 
 
