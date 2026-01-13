@@ -210,6 +210,24 @@ footer {
     display: block;
     unicode-bidi: isolate;
 }
+
+.footer-link-btn {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: #666;
+    cursor: pointer;
+}
+
+.footer .divider {
+    margin: 0 8px;
+    color: #aaa;
+}
+
+
+
 .modal {
     position: fixed;
     inset: 0;
@@ -237,6 +255,20 @@ footer {
     width: 100%; height: 100%;
     background-color: rgba(0,0,0,0.5); /* 반투명 검정 배경 */
 }
+
+
+.modal-dialog {
+    position: relative;
+    max-width: 640px;
+    width: 100%;
+    max-height: 80vh;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    padding: 24px 24px 18px;
+    overflow-y: auto;
+}
+
 
 /* 팝업 박스 디자인 */
 .modal-content {
@@ -267,5 +299,10 @@ footer {
     line-height: 1.6;
 }
 
-
-
+.cta-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
